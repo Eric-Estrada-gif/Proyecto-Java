@@ -1,0 +1,49 @@
+package org.cibertec.controlador;
+
+import java.io.Serializable;
+import java.util.List;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.TypedQuery;
+
+import org.cibertec.model.Categoria;
+import util.JPAUtil;
+
+public class ProveedorJpaController implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private EntityManagerFactory emf;
+	
+	//CONSTRUCTOT POR DEFECTO (USANDO JPAUtil)
+	public ProveedorJpaController() {
+		this.emf = JPAUtil.getEntityManagerFactory();
+	}
+	
+	public EntityManager getEntityManager() {
+		return emf.createEntityManager();
+	}
+	
+	//METODO JAPA
+	public List<Proveedor> findAllProveedor() {
+		EntityManager em = getEntityManager();
+	try {
+		TypedQuery<Proveedor> q = em.createQuery("SELECT e FROM Proveedor e", Proveedor.class);
+		return q.getResultList();
+	}
+	finally {
+		em.close();
+	}
+	}
+	
+	public Proveedor buscarById(int codigo) {
+		EntityManager em = getEntityManager();
+		try {
+			return em.find(Proveedor.class, codigo);
+		} finally {
+			em.close();
+		}
+	}
+
+}
+

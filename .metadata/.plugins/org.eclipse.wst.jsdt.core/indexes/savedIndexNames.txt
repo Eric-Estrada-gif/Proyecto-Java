@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+C:\Users\Eric\Desktop\LPII_Sesión_04 - Rec\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2646477618.index
+325497313.index
+2029936448.index
+3875846731.index

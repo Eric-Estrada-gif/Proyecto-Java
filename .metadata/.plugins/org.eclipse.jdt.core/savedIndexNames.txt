@@ -1,0 +1,22 @@
+INDEX VERSION 1.134+C:\Users\Eric\Desktop\LPII_Sesión_04 - Rec\.metadata\.plugins\org.eclipse.jdt.core
+2324686149.index
+1435186846.index
+3397030616.index
+1865797976.index
+1437669176.index
+2335433054.index
+3049369318.index
+4203990518.index
+1342051976.index
+3399962979.index
+2837636738.index
+2664098175.index
+4646397.index
+900089437.index
+2923734320.index
+3606999472.index
+3413725848.index
+1724656005.index
+1775880643.index
+3064834709.index
+3888035273.index
